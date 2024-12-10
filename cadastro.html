@@ -7,74 +7,64 @@
     <link rel="stylesheet" href="formatos.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <style>
-        /* Cor de fundo da barra de navegação */
         nav {
-            background-color: #333; /* Cor da barra de navegação */
+            background-color: #333;
         }
 
-        /* Estilo para a área do formulário */
         .container-fluid {
-            background-color: #d28b74; /* Cor de fundo do corpo da página */
+            background-color: #d28b74;
             padding: 20px;
         }
 
-        /* Estilo para os campos de entrada e rótulos */
         .form-label {
             font-weight: bold;
             margin-right: 5px;
             margin-left: 20px;
-            width: 120px; /* Define uma largura fixa para os rótulos */
-            text-align: left; /* Alinha os rótulos à direita */            
+            width: 120px;
+            text-align: left;
         }
 
-        /* Estilo para alinhar campos */
         .form-group {
             display: flex;
             width: 99%;
-            align-items: right; /* Alinha o rótulo e o campo verticalmente */
-            justify-content: flex-start; /* Garante alinhamento inicial */
-            margin-bottom: 15px; /* Espaço entre os grupos */
+            justify-content: flex-start;
+            margin-bottom: 15px;
         }
 
         .form-control {
-            flex: 1; /* Faz os campos ocuparem o espaço restante */
-            width: 100%;            
+            flex: 1;
+            width: 100%;
         }
 
-              
-        /* Específico para o campo Complemento */
         #complemento {
-           margin-right: 1%; /* Diminui o espaço entre o campo Número e o próximo campo */
+            margin-right: 1%;
         }
 
         #uf {
-            margin-right: 1%; /* Diminui o espaço entre o campo Número e o próximo campo */
+            margin-right: 1%;
         }
 
-        /* Estilo personalizado para o botão de cadastro */
         .btn-cadastrar {
-            background-color: #333; /* Cor de fundo personalizada */
-            color: #fff; /* Cor do texto */
-            font-size: 1.25em; /* Tamanho da fonte */
-            padding: 10px 10px; /* Espaçamento interno */
-            border-radius: 5px; /* Bordas arredondadas */
-            width: 150px; /* Largura total do botão */
+            background-color: #333;
+            color: #fff;
+            font-size: 1.25em;
+            padding: 10px 10px;
+            border-radius: 5px;
+            width: 150px;
         }
 
         .btn-cadastrar:hover {
-            background-color: #555555; /* Cor de fundo ao passar o mouse */
+            background-color: #555555;
         }
 
-        /* Alinhamento do botão à direita */
         .btn-container {
             display: flex;
-            justify-content: flex-end; /* Alinha o conteúdo à direita */
-            margin-top: 20px; /* Espaçamento superior para separar do formulário */
+            justify-content: flex-end;
+            margin-top: 20px;
         }
     </style>
 </head>
 <body class="cadastro">
-    <!-- Barra de navegação -->
     <nav class="navbar navbar-expand-lg navbar-dark">
         <a class="navbar-brand" href="home.html">Receitas Tapejara</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -95,19 +85,16 @@
         </div>
     </nav>
 
-    <!-- Conteúdo principal -->
     <div class="container-fluid">
         <h2 class="text-center mb-4">Efetuei seu Cadastro</h2>
-        <form action="enviar_email.php" method="post">
-            <!-- Campo Nome -->
+        <form method="post">
             <div class="form-row">
                 <div class="form-group">
                     <label for="nome" class="form-label">Nome</label>
                     <input type="text" class="form-control" id="nome" name="nome" required>
                 </div>
-            </div>    
+            </div>
 
-            <!-- Campo E-mail -->
             <div class="form-row">
                 <div class="form-group">
                     <label for="email" class="form-label">E-mail</label>
@@ -115,7 +102,6 @@
                 </div>
             </div>
 
-            <!-- Campo CEP -->
             <div class="form-row">
                 <div class="form-group">
                     <label for="cep" class="form-label">CEP</label>
@@ -123,7 +109,6 @@
                 </div>
             </div>
 
-            <!-- Campo Rua -->
             <div class="form-row">
                 <div class="form-group">
                     <label for="rua" class="form-label">Rua</label>
@@ -131,7 +116,6 @@
                 </div>
             </div>
 
-            <!-- Campo Número e Complemento -->
             <div class="form-row">
                 <div class="form-group col-md-3">
                     <label for="numero" class="form-label">Número</label>
@@ -143,32 +127,27 @@
                 </div>
             </div>
 
-            <!-- Campo Cidade -->
             <div class="form-row">
                 <div class="form-group col-md-9">
                     <label for="cidade" class="form-label">Cidade</label>
                     <input type="text" class="form-control" id="cidade" name="cidade" required>
                 </div>
                 <div class="form-group col-md-3">
-                    <label for="estado" class="form-label">Uf</label>
+                    <label for="uf" class="form-label">Uf</label>
                     <input type="text" class="form-control" id="uf" name="uf" required>
                 </div>
             </div>
 
-                 
-            <!-- Botão de envio -->
             <div class="btn-container">
                 <button type="submit" class="btn btn-cadastrar">Cadastrar</button>
             </div>
         </form>
     </div>
 
-    <!-- Rodapé -->
-    <footer class="text-center" style="background-color: #000; color: #d28b74; padding: 0px;">
+    <footer class="text-center" style="background-color: #000; color: #d28b74; padding: 0;">
         © Tapejara 2024
     </footer>
 
-    <!-- Scripts do Bootstrap -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>

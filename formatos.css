@@ -1,26 +1,23 @@
-/* Definir uma classe para a logotipo */
 .logo {
     width: 50px;
     height: 50px;
     margin-bottom: 10px;
 }
 
-/* Formatação global */
 html, body {
-    height: 100%; /* Garante que o body ocupe a altura total da janela */
+    height: 100%;
     margin: 0;
     padding: 0;
     display: flex;
-    flex-direction: column; /* Organiza os elementos em uma coluna */
-    background-color: #d28b74 !important; /* Cor de fundo semelhante ao exemplo */
+    flex-direction: column;
+    background-color: #d28b74 !important;
     color: #000;
     text-align: center;
     box-sizing: border-box;
 }
 
-/* Cabeçalho com logo e título */
 header {
-    height: 60px; /* Altura do cabeçalho */
+    height: 60px;
     padding: 20px;
     display: flex;
     align-items: center;
@@ -30,7 +27,7 @@ header {
 .logo {
     width: 50px;
     height: 50px;
-    margin-right: 20px; /* Aumenta o espaço entre o logo e o título */
+    margin-right: 20px;
 }
 
 h1 {
@@ -39,15 +36,13 @@ h1 {
     color: #000;
 }
 
-/* Área principal */
 main {
-    height: calc(100vh - 100px); /* Altura do conteúdo central */
+    height: calc(100vh - 100px);
     padding: 20px;
-    overflow-y: auto; /* Permite a rolagem vertical se o conteúdo ultrapassar a altura */
+    overflow-y: auto;
     text-align: center;
 }
 
-/* Estilo para a área principal do conteúdo */
 .receitas-container {
     display: flex;
     flex-wrap: wrap;
@@ -55,8 +50,8 @@ main {
     align-items: flex-start;
     gap: 20px;
     padding: 20px;
-    overflow-y: auto; /* Permite a rolagem vertical */
-    max-height: calc(100vh - 100px); /* Ajusta a altura para a área central da página */
+    overflow-y: auto;
+    max-height: calc(100vh - 100px);
 }
 
 .container {
@@ -67,19 +62,16 @@ main {
     flex: 1;
 }
 
-/* Rodapé */
 footer {
-    height: 25px; /* Altura do rodapé */
+    height: 25px;
     background-color: #000;
     color: #fff;
     padding: 10px 0;
     text-align: center;
-    width: 100%; /* Garante que o rodapé ocupe toda a largura */
-    margin-top: auto; /* Faz o rodapé ir para a parte inferior*/
-    
+    width: 100%;
+    margin-top: auto;
 }
 
-/* Menu */
 nav {
     text-align: left;
     padding: 10px;
